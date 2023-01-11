@@ -1,0 +1,24 @@
+﻿@model Waehrung
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ZSKEingabe</title>
+</head>
+<body>
+
+    <form asp-action="Berechnung" methode="post">
+        <div>
+            <label asp-for="Eurobetrag">Euro</label>
+            <input asp-for="Eurobetrag" />
+        </div>
+        <button type="Rechne">Rechne</button>
+    </form>
+
+</body>
+</html>
